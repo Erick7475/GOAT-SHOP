@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Carta</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("fondo\ inde.jpeg"); /* Cambia 'imagen_de_fondo.jpg' por la URL de tu imagen de fondo */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            background: linear-gradient(to bottom, rgba(14, 238, 81, 0.473), rgba(0, 0, 0, 0.7)); /* Degradado entre la imagen de fondo y la carta */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carta {
+            background-image: url("river\ fondo.jpeg"); /* Cambia 'imagen_de_tu_carta.jpg' por la URL de tu imagen de carta */
+            background-size: cover;
+            width: 300px; /* Ancho de la carta */
+            height: 400px; /* Alto de la carta */
+            text-align: center;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .boton {
+            display: block;
+            margin: 20px auto;
+            width: 100px; /* Ancho del botón */
+            height: 100px; /* Alto del botón */
+            background-image: url("the\ goat\ shop.jpeg"); /* Cambia 'imagen_del_boton.jpg' por la URL de tu imagen de botón */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            line-height: 100px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 50%;
+        }
+
+        p {
+            font-size: 18px; /* Cambia el tamaño de texto según tus preferencias */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="carta">
+        <p>¡¡bienvenido a la tienda numero 1!!</p>
+        <a href="principal.html" class="boton"></a>
+    </div>
+</body>
+</html>
